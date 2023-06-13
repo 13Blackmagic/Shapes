@@ -85,4 +85,9 @@ const questions = [
         message: 'What text would you like to draw?',
         validate: validateUserInput,
     },
+    
+    function init() {
+    inquirer.createPromptModule(questions).then(data=> writeToFile("index.html", generateHTML(data)))}
+    
+
 ];

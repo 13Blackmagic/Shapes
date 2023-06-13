@@ -1,5 +1,12 @@
-const CLI = require('./lib/cli.js');
+const fs = require('fs');
+const inquirer = require('inquirer');
+const { Circle, Square, Triangle } = require('./lib/shape');
 
-const cli = new CLI();
+const shapeSelection = ["Circle", "Square", "Triangle"];
 
-cli.run();
+function validateUserInput(input) {
+    if (input === "") {
+        return "Please enter a value.";
+    }
+    return true;
+}

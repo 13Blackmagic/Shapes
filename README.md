@@ -4,7 +4,7 @@
 Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
 - I wanted to create a way to make shapes with style?
-- I built it so i can make a logo for myself")
+- I built it so i can make a logo for myself"
 - I solved a way to make a cool logo
 - I learned OOP
 

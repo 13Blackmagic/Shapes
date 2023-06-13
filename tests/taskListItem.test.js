@@ -5,6 +5,7 @@ describe('TaskListItem', () => {
         const taskListItem = new TaskListItem();
         expect(taskListItem).toEqual(expect.any(Object));
     }
+    );
 });
 
 test('should create a new color', () => {

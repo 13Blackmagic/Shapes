@@ -1,4 +1,4 @@
-const {circle,square, triangle } = require('./shapes');
+const {circle,square, triangle } = require('./lib/shapes.js');
 const {expect} = require('chai');
 const {spy} = require('sinon'); 
 const {createCanvas} = require('canvas');

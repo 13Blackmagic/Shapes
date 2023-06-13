@@ -1,6 +1,6 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
-const { Circle, Square, Triangle } = require('./lib/shape');
+const { Circle, Square, Triangle } = require('./lib/shape.js');
 
 const shapeSelection = ["Circle", "Square", "Triangle"];
 
@@ -88,6 +88,6 @@ const questions = [
     
     function init() {
     inquirer.createPromptModule(questions).then(data=> writeToFile("index.html", generateHTML(data)))}
-    
+
 
 ];

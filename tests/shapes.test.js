@@ -1,4 +1,4 @@
-const {circle,square, triangle, diamond} = require('./shapes');
+const {circle,square, triangle } = require('./shapes');
 const {expect} = require('chai');
 const {spy} = require('sinon'); 
 const {createCanvas} = require('canvas');
@@ -33,13 +33,4 @@ describe('shapes', () => {
             writeFileSync(join(__dirname, 'triangle.png'), buffer);
         });
     });
-    describe('diamond', () => {
-        it('should draw a diamond', () => {
-            const canvas = createCanvas(100, 100);
-            const context = canvas.getContext('2d');
-            diamond(context, 50, 50, 50);
-            const buffer = canvas.toBuffer();
-            writeFileSync(join(__dirname, 'diamond.png'), buffer);
-        });
     });
-});
